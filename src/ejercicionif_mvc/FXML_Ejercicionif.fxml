@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="ejercicionif_mvc.FXML_EjercicionifController">
+    <stylesheets>
+        <URL value="@fxml_ejercicionif.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="92.0" layoutY="108.0" text="Escribe DNI">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfDni" layoutX="219.0" layoutY="109.0" prefHeight="26.0" prefWidth="209.0" />
+      <Label fx:id="lbValidacion" layoutX="168.0" layoutY="159.0" text="Validacion" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnIntroducir" layoutX="256.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: green;" text="Introducir" textFill="#00e1ff" />
+   </children>
+</AnchorPane>
